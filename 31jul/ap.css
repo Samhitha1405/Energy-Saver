@@ -1,0 +1,52 @@
+
+.main {
+    background: linear-gradient(135deg, #87c4ed 0%, #f5f7fa 100%);
+    min-height: 100vh;
+}
+
+.stButton>button, .stDownloadButton>button {
+    background: linear-gradient(90deg, #6cb8f7 0%, #e6f1a7 100%);
+    color: #222;
+    border-radius: 12px;
+    padding: 10px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(108,184,247,0.15);
+    border: none;
+    transition: background 0.3s, transform 0.2s;
+}
+.stButton>button:hover, .stDownloadButton>button:hover {
+    background: linear-gradient(90deg, #e6f1a7 0%, #6cb8f7 100%);
+    color: #1565c0;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 16px rgba(108,184,247,0.25);
+}
+
+.stMetric {
+    background: #fffbe7;
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(210,175,212,0.10);
+    border-left: 5px solid #d2afd4;
+    transition: box-shadow 0.2s;
+}
+.stMetric:hover {
+    box-shadow: 0 6px 24px rgba(210,175,212,0.18);
+    border-left: 5px solid #6cb8f7;
+}
+
+.stSubheader {
+    color: #1565c0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px rgba(108,184,247,0.08);
+}
+
+/* Custom color for Graphical Analysis subheader */
+h2:has(span:contains('Graphical Analysis')) {
+    color: #d19f74 !important;
+    text-shadow: 0 2px 8px rgba(230,126,34,0.15);
+}
